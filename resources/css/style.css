@@ -1,6 +1,7 @@
 html {
   font-size: 18px;
   font-family: Helvetica;
+  line-height: 1.4;
   }
 
 body * {
@@ -26,9 +27,17 @@ a {
   align-items: center;
 }
 
-header .container {
+header {
+  height: 30rem;
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 1rem;
+}
+
+#top-bar {
   height: 3rem;
-  margin-top: 1rem;
   background-color: cadetblue;
   color: white;
   justify-content: space-between;
@@ -36,7 +45,24 @@ header .container {
 
 header img {
   margin: 0 1rem 0 2rem;
+  height: 1.5rem;
 }
+
 .mobile {
   display: none;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  background-color: white;
+  padding: 1.5rem 5rem;
+}
+
+#hero-text {
+  position: relative;
+  left: 2rem;
+  margin-top: 10rem;
+  justify-content: flex-end;
 }
