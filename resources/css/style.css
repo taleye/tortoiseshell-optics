@@ -2,12 +2,14 @@ html {
   font-size: 18px;
   font-family: Helvetica;
   line-height: 1.4;
-  }
-
-body * {
-  border: solid 1px black;
 }
 
+/*
+body * {
+  border: solid 1px black;
+} */
+/* Set containers and flexbox attributes */
+/* Set header banner */
 a {
   color: white;
   text-decoration: none;
@@ -27,6 +29,10 @@ a {
   align-items: center;
 }
 
+.between {
+  justify-content: space-between;
+}
+
 header {
   height: 30rem;
   background-image: url("../images/glasses-bg.png");
@@ -40,7 +46,6 @@ header {
   height: 3rem;
   background-color: cadetblue;
   color: white;
-  justify-content: space-between;
 }
 
 header img {
@@ -65,4 +70,58 @@ h1 {
   left: 2rem;
   margin-top: 10rem;
   justify-content: flex-end;
+}
+
+/* End header banner */
+.flex-col {
+  flex-direction: column;
+}
+
+#usp {
+  height: 14rem;
+  justify-content: center;
+}
+
+.company-usp {
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+  align-items: center;
+  text-align: center;
+}
+
+.company-usp img {
+  width: 5rem;
+}
+
+#usp .paper {
+  width: 3.5rem;
+}
+
+.company-info {
+  width: 35%;
+  margin: 0 2.5% 5rem 2.5%;
+}
+
+#info {
+  justify-content: center;
+}
+
+h2 {
+  width: 10rem;
+  font-weight: bold;
+  color: white;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  height: 9.5rem;
+  background-color: azure;
+}
+
+footer img {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
 }
