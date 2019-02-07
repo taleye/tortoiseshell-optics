@@ -7,6 +7,12 @@ body * {
   border: solid 1px black;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
 .container {
   width: 960px;
   margin: 0 auto;
@@ -28,6 +34,9 @@ header .container {
   justify-content: space-between;
 }
 
+header img {
+  margin: 0 1rem 0 2rem;
+}
 .mobile {
   display: none;
 }
