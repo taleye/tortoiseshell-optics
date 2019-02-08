@@ -4,10 +4,6 @@ html {
   line-height: 1.4;
 }
 
-/*
-body * {
-  border: solid 1px black;
-} */
 /* Set containers and flexbox attributes */
 /* Set header banner */
 a {
@@ -124,4 +120,106 @@ footer {
 footer img {
   height: 1.5rem;
   margin: 4rem 1rem 4rem 4rem;
+}
+
+/* Tablet devices */
+@media only screen and (max-width: 960px) {
+  .container {
+    min-width: 250px;
+    max-width: 100%;
+  }
+
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+    padding: .75rem 4rem;
+  }
+
+  #hero-text {
+    left: -2rem;
+    margin-top: 5rem;
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 620px) {
+  .mobile {
+    display: block;
+  }
+
+  .responsive {
+    display: none;
+  }
+
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  h1 {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+
+  #hero-text {
+    justify-content: center;
+    left: auto;
+    background-color: white;
+    margin: 9rem auto 0 auto;
+  }
+
+  .branding span {
+    display: none;
+  }
+
+  #usp {
+    flex-direction: column;
+    font-size: .77rem;
+    padding: 3rem 0;
+    height: auto;
+    align-items: center;
+  }
+
+  .company-usp {
+    margin: .77rem 0;
+    height: auto;
+  }
+
+  .usp-title {
+    margin-top: 1rem;
+  }
+
+  #info {
+    flex-direction: column;
+    align-items: center;
+    font-size: .77rem;
+  }
+
+  .company-info {
+    width: auto;
+    margin: 0 auto;
+
+  }
+
+  h2 {
+    text-align: center;
+    width: auto;
+  }
+
+  .info {
+    padding: 0 .5rem 4rem .5rem;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer img {
+  margin: 0 auto;
+  }
+
 }
